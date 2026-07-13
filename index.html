@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه FreshMart | سیستم توصیه‌گر هوشمند</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+    <!-- ===== هدر ===== -->
+    <header class="header">
+        <div class="logo">
+           ارزان سرا
+        </div>
+        <nav class="nav-menu">
+            <a href="#" class="active">خانه</a>
+            <a href="#">محصولات</a>
+            <a href="#">درباره ما</a>
+            <a href="#">تماس با ما</a>
+            <a href="#">وبلاگ</a>
+        </nav>
+        <div class="user-badge">
+            👤 
+        </div>
+    </header>
+
+    <!-- ===== محتوای اصلی ===== -->
+    <div class="container">
+
+
+        <!-- شبکه محصولات -->
+        <div id="itemsContainer" class="items-grid"></div>
+
+        <button class="btn-calculate" id="calcBtn"> یافتن شبیه‌ترین کاربر و پیشنهادات</button>
+
+        <!-- بخش نتایج -->
+        <div id="resultsArea" class="results" style="display: none;">
+            <div class="result-grid" >
+                <!-- ستون شبیه‌ترین کاربران (۱۲ روش) -->
+                <div class="similar-box">
+                    <div class="section-title"> شبیه‌ترین کاربران با ۱۲ روش</div>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ردیف</th>
+                                    <th>روش</th>
+                                    <th>کاربر</th>
+                                    <th>مقدار</th>
+                                    <th>درصد شباهت</th>
+                                </tr>
+                            </thead>
+                            <tbody id="similarityTableBody"></tbody>
+                        </table>
+                    </div>
+ 
+                </div>
+
+                <!-- ستون پیشنهادات ویژه -->
+                <div class="recommend-box">
+                    <div class="section-title"> پیشنهادات ویژه (بر اساس شبیه‌ترین کاربر)</div>
+                    <div id="recommendationsList" class="rec-list">
+                        <!-- توسط جاوااسکریپت پر می‌شود -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== فوتر ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>درباره ارزان سرا</h4>
+                <ul>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">چگونه کار می‌کند</a></li>
+                    <li><a href="#">گواهینامه‌ها</a></li>
+                    <li><a href="#">حریم خصوصی</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>خدمات مشتریان</h4>
+                <ul>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">پشتیبانی آنلاین</a></li>
+                    <li><a href="#">سوالات متداول</a></li>
+                    <li><a href="#">بازگشت کالا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>دسترسی سریع</h4>
+                <ul>
+                    <li><a href="#">محصولات پرفروش</a></li>
+                    <li><a href="#">تخفیف‌های ویژه</a></li>
+                    <li><a href="#">پیشنهادات هفته</a></li>
+                    <li><a href="#">مجله ارزان سرا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>اطلاعات تماس</h4>
+                <ul>
+                    <li>📞 ۰۲۱-۱۲۳۴-۵۷۸</li>
+                    <li>📧 info@harzansra.com</li>
+                    <li>📍 مشهد، خیابان آزادی</li>
+                    <li>🕘 ۸ صبح تا ۱۰ شب</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; ۲۰۲۶ <strong>فروشگاه ارزان سرا </strong> | تمامی حقوق محفوظ است. | طراحی شده با ❤️ برای فروشگاه ارزان سرا
+        </div>
+    </footer>
+
+    <!-- ===== اسکریپت data.js ===== -->
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+
+    <!-- ===== اسکریپت اصلی ===== -->
+
+</body>
+</html>
