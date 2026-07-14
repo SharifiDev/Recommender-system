@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="index.css">
 
 </head>
+
 <body>
 
     <!-- ===== هدر ===== -->
     <header class="header">
         <div class="logo">
-           ارزان سرا
+            ارزان سرا
         </div>
         <nav class="nav-menu">
             <a href="#" class="active">خانه</a>
@@ -22,7 +24,7 @@
             <a href="#">وبلاگ</a>
         </nav>
         <div class="user-badge">
-            👤 
+            👤
         </div>
     </header>
 
@@ -36,37 +38,44 @@
         <button class="btn-calculate" id="calcBtn"> یافتن شبیه‌ترین کاربر و پیشنهادات</button>
 
         <!-- بخش نتایج -->
-        <div id="resultsArea" class="results" style="display: none;">
-            <div class="result-grid" >
-                <!-- ستون شبیه‌ترین کاربران (۱۲ روش) -->
-                <div class="similar-box">
-                    <div class="section-title"> شبیه‌ترین کاربران با ۱۲ روش</div>
-                    <div class="table-wrap">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>ردیف</th>
-                                    <th>روش</th>
-                                    <th>کاربر</th>
-                                    <th>مقدار</th>
-                                    <th>درصد شباهت</th>
-                                </tr>
-                            </thead>
-                            <tbody id="similarityTableBody"></tbody>
-                        </table>
-                    </div>
- 
+<div id="resultsArea" class="results" style="display: none;">
+    <div class="result-scroll">
+        <div class="result-grid">
+            <!-- ستون شبیه‌ترین کاربران -->
+            <div class="similar-box">
+                <div class="section-title">
+                    <span>📊</span> شبیه‌ترین کاربران با ۱۲ روش
                 </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ردیف</th>
+                                <th>روش</th>
+                                <th>کاربر</th>
+                                <th>مقدار</th>
+                                <th>درصد شباهت</th>
+                            </tr>
+                        </thead>
+                        <tbody id="similarityTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
 
-                <!-- ستون پیشنهادات ویژه -->
-                <div class="recommend-box">
-                    <div class="section-title"> پیشنهادات ویژه (بر اساس شبیه‌ترین کاربر)</div>
-                    <div id="recommendationsList" class="rec-list">
-                        <!-- توسط جاوااسکریپت پر می‌شود -->
-                    </div>
+            <!-- ستون پیشنهادات ویژه -->
+            <div class="recommend-box">
+                <div class="section-title">
+                    <span>🎯</span> پیشنهادات ویژه
+                </div>
+                <div id="recommendationsList" class="rec-list">
+                    <!-- توسط جاوااسکریپت پر می‌شود -->
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+
     </div>
 
     <!-- ===== فوتر ===== -->
@@ -110,7 +119,8 @@
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; ۲۰۲۶ <strong>فروشگاه ارزان سرا </strong> | تمامی حقوق محفوظ است. | طراحی شده با ❤️ برای فروشگاه ارزان سرا
+            &copy; ۲۰۲۶ <strong>فروشگاه ارزان سرا </strong> | تمامی حقوق محفوظ است. | طراحی شده با ❤️ برای فروشگاه ارزان
+            سرا
         </div>
     </footer>
 
@@ -121,4 +131,8 @@
     <!-- ===== اسکریپت اصلی ===== -->
 
 </body>
+
 </html>
+
+
+
